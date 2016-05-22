@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-5-22 13:51:44 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.zq.User" table="USER">
+        <id name="id" type="int">
+            <column name="ID" />
+            <!-- 指定主键的生成方式，表示使用数据库本地方式 -->
+            <generator class="native" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="age" type="int">
+            <column name="AGE" />
+        </property>
+    </class>
+</hibernate-mapping>
